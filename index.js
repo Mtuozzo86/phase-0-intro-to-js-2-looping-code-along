@@ -1,18 +1,16 @@
-function writeCards(names, event) {
-    let messages = [];
-    for (let i = 0; i < names.length; i++) {
-        messages.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`)
-
+function writeCards(names, event){
+    let cards = []
+    for (let i = 0; i < names.length; i++){
+        cards.push(`Thank you, ${names[i]}, for the wonderful ${event} gift!`)
     }
-    return messages
-
+    return cards
 }
 
-function countDown(startingNumber) {
-    while (startingNumber > 0) {
-        console.log(startingNumber);
-        startingNumber--;
+function countDown(numb){
+    while(numb >= 0){
+      console.log(numb--)
     }
-    console.log(startingNumber)
-}
-
+    
+  }
+  
+countDown(10)
